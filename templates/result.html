@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Titanic</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+</head>
+<body>
+    <h1>WELCOME TO TITANIC MACHINE LEARNING MODEL</h1>
+    <h2>Get Your Predictions</h2>
+    <h1>Result</h1>
+
+    <form action= "{% url 'home' %}">
+        {% csrf_token %}
+        <br>
+        <div class="container1">
+            <div class="zone">
+                <p>Here is your prediction: {{result}}</p>
+            </div>
+
+        <br>
+
+            <div class="zone">
+                <input class="button1" type="submit" value="Home">
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript" src="{% static 'main.js' %}"></script>
+</body>
+</html>

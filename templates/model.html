@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Titanic</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+</head>
+<body>
+<h1>WELCOME TO TITANIC MACHINE LEARNING MODEL</h1>
+<h2>Get Your Predictions</h2>
+<p class="p1">Please Enter Your Passenger Values</P>
+
+<form action= "{% url 'result' %}">
+
+    {% csrf_token %}
+    <div class="container">
+        <div  class="zone"><P>Pclass</P>
+            <input type="text" name="pclass" required></div>
+        <div  class="zone"><P>Sex</P>
+            <input type="text" name="sex" required></div>
+        <div  class="zone"> <P>Age</P>
+            <input type="text" name="age" required></div>
+        <div  class="zone"><P>Sibsp</P>
+            <input type="text" name="sibsp" required></div>
+        <div  class="zone"><P>Parch</P>
+            <input type="text" name="parch" required></div>
+        <div  class="zone"><P>Fare</P>
+            <input type="text" name="fare" required></div>
+        <div  class="zone"><P>Embarked</P>
+            <input type="text" name="embarked" required></div>
+        <div  class="zone"><P>Title</P>
+            <input type="text" name="title" required></div></div>
+        <br>
+   <div class="container1">
+        <div class="zone">
+            <input class="button1" type="submit" value="Predict"></div></div></div>
+
+</form>
+
+<script type="text/javascript" src="{% static 'main.js' %}"></script>
+</body>
+</html>

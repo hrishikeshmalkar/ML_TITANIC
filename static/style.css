@@ -1,0 +1,84 @@
+
+/* Element */
+body{
+	background-color: #c9d7e5;
+	background-size: 	cover;
+}
+
+
+h1{
+	color: #871634;
+	text-align: center;
+	cursor: pointer;
+	border: 5px solid rgba(189, 22, 89,0.15);
+	text-align:center;
+
+}
+
+h1:hover {
+	color: #876113;
+	text-align: center;
+	cursor: pointer;
+	border: 5px solid rgba(189, 22, 89,0.15);
+	text-align:center;
+}
+
+h2 {
+    color: #07871a;
+    font-family: 'Nova Square', cursive;
+    text-align: center;
+	font-size: 190%;
+}
+
+.container {
+	display: grid;
+	grid-gap: 15px;
+	grid-template-columns: 1fr 1fr;
+}
+
+.container1 {
+	display: grid;
+	grid-gap: 15px;
+	grid-template-columns: 1fr;
+}
+.zone {
+    display:inline-block;
+    text-align: center;
+    transition: all 0.2s linear;
+}
+p{
+	font-family: 'Nova Square', cursive;
+	color:#656563;
+	font-size: 140%;
+}
+.p1{
+	font-family: 'Nova Square', cursive;
+	color:#656563;
+	font-size: 140%;
+    text-align:center;
+
+}
+.p2{
+	font-family: 'Nova Square', cursive;
+	color: #040404;
+	font-size: 140%;
+    text-align:center;
+
+}
+.p-p{
+	font-family: 'Nova Square', cursive;
+	color:#656563;
+	font-size: 100%;
+}
+.button1 {
+	background-color: #2a8114;
+	color: black;
+	font-size: 20px;
+	border-radius: 12px;
+	padding: 5px 40px;
+}
+.button1:hover {
+  background-color: #3cb847; /* Green */
+  color: white;
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Titanic</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+</head>
+<body>
+<h1>WELCOME TO TITANIC MACHINE LEARNING MODEL</h1>
+<h2>Get Your Predictions</h2><br>
+<p class="p2">Attribute Information</P>
+
+<form action= "{% url 'model' %}">
+
+    {% csrf_token %}
+    <div class="container1">
+        <div  class="zone">
+            <p class="p-p">Survival: Survived Not Survived</p>
+            <p class="p-p">Pclass: Ticket class (1 = 1st, 2 = 2nd, 3 = 3rd)</p>
+            <p class="p-p">Sex: Sex (0 = Male, 1=Female)</p>
+            <p class="p-p">Age: Age in years</p>
+            <p class="p-p">Sibsp	# of siblings/ spouses aboard the Titanic</p>
+            <p class="p-p">Parch	# of parents/ children aboard the Titanic</p>
+            <p class="p-p">Fare: Passenger fare</p>
+            <P class="p-p">Embarked: Port of Embarkation (C = Cherbourg, Q = Queenstown, S = Southampton)(S=0, Q=1 C=2)</P>
+            <p class="p-p">Title: Title of name(Mrs = 0, Miss = 1, Royale People = 2, Dr = 3, Rev = 4, Officer = 5,Royale People =6)</p>
+        </div>
+    </div><br>
+
+
+
+   <div class="container1">
+        <div class="zone">
+            <input class="button1" type="submit" value="Next">
+        </div>
+   </div>
+
+</form>
+
+<script type="text/javascript" src="{% static 'main.js' %}"></script>
+</body>
+</html>
